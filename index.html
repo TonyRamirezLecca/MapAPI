@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Map</title>
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="header">
+				<div class="title-container">
+					<h1 id="title">Brigham Young University</h1>
+					<h5 id="title-sub">What can you do around Utah Valley?</h5>
+				</div>
+			</div>
+
+			<div class="map-container">
+				<div class="attraction-text">Explore The Valley</div>
+				<div id="map"></div>
+			</div>
+
+			<div class="attraction-container">
+				<div class="attraction-text">Enjoy Beautiful Scenery</div>
+				<hr>
+				<div class="image-scenery"></div>
+
+				<div class="attraction-text">Have Fun at Festivals, Lagoon, and Big Events</div>
+				<div class="image-fun-container">
+					<div class="image-fun1"></div>
+					<div class="image-fun2"></div>
+					<div class="image-fun3"></div>
+				</div>
+			</div>
+
+			<footer>
+				<a href="https://github.com/TonyRamirezLecca"><i class="fab fa-github"></i></a>
+			</footer>
+
+		</div>
+
+
+	<script>
+		function initMap() {
+			var options = {
+				zoom:13,
+				center: {lat:40.2518, lng:-111.6493}
+			}
+
+			var map = new google.maps.Map(document.getElementById("map"), options);
+
+			var marker = new google.maps.Marker({
+				position: {lat:40.2518, lng:-111.6493},
+				map:map
+			});
+
+
+		}
+	</script>
+		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP0Nmt5png_GzOHi4hCfdwfYGZzX3p8rg&callback=initMap"
+    async defer></script>
+	</body>
+
+</html>
