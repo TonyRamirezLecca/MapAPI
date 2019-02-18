@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
 }
 .container {
-    min-height: 300vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,27 +15,30 @@ body {
     position: relative;
     background-image: url('images/cougar.jpeg');
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top center;
 }
+.header-fixed {
+    background-attachment: fixed;
+}
 .title-container {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     padding: 0;
     position: absolute;
     top: 10%;
-    left: 3%;
     background: #0e8684;
     box-shadow: 1px 1px 3px black;
 }
 #title {
+    width: 100%;
     margin: 0;
     font-size: 40px;
     padding: 10px;
     color: white;
 }
 #title-sub {
+    width: 100%;
     margin: 0;
     font-size: 25px;
     padding: 10px;
@@ -44,6 +46,7 @@ body {
 }
 .map-container {
     width: 100%;
+    margin: 0 auto;
     background: white;
     padding: 20px;
     padding-bottom: 0;
@@ -65,8 +68,10 @@ body {
     background-image: url('images/lake.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
+}
+.image-scenery-fixed {
     background-attachment: fixed;
+    background-position: center center;
 }
 .attraction-text {
     font-size: 50px;
@@ -127,4 +132,11 @@ footer {
 footer a {
     color: white;
     font-size: 40px;
+}
+.removeFixedScenery {
+    background-attachment: static;
+    background-position: bottom center;
+}
+.removeFixedHeader {
+    background-attachment: static;
 }
