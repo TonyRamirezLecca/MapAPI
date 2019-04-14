@@ -71,6 +71,7 @@ body {
   background-image: url("images/lake.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
 }
 .image-scenery-fixed {
   background-attachment: fixed;
